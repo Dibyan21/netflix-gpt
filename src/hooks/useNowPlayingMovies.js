@@ -12,7 +12,7 @@ const useNowPlayingMovies = () => {
       API_OPTIONS
     );
     const jsonData = await data.json(); //console logging this might give results twice because of <React.StrictMode> used in index.js, however it will only happen in local machine and won't happen in production.
-    console.log(jsonData.results);
+    //console.log(jsonData.results);
     dispatch(addNowPlayingMovies(jsonData.results));
   };
 
