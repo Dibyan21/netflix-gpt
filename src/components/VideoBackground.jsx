@@ -7,9 +7,9 @@ const VideoBackground = ({ movieId }) => {
   useMovieTrailer(movieId);
 
   return (
-    <div className="w-screen h-screen overflow-hidden">
+    <div className="overflow-hidden">
       <iframe
-        className="w-full aspect-video"
+        className="w-screen aspect-video object-cover"
         src={"https://www.youtube.com/embed/" + trailerVideo?.key + "?autoplay=1&mute=1&loop=1"} //we have an option of using state variables here but we use redux for state management
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
