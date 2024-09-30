@@ -31,5 +31,3 @@ const model = genAI.getGenerativeModel({
 });
 
 export default model;
-
-// const prompt = "Write a story about a magic backpack.";
